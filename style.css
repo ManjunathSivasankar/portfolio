@@ -1,0 +1,191 @@
+/* General styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f1f4f4;
+}
+
+
+/* Header styling */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #848686;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    color: #171616;
+}
+
+.navbar a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #111111;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+    color: #f2f4f6;
+    background-color: #848686;
+}
+
+
+/* Section styling */
+
+section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+
+/* About Me styling */
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #007BFF;
+    margin-bottom: 10px;
+}
+
+
+/* Skill section styling */
+
+.skill {
+    display: inline-block;
+    text-align: center;
+    margin-right: 15px;
+    padding: 10px;
+    background-color: #f0f4f8;
+    border-radius: 5px;
+    width: 100px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.skill img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+}
+
+
+/* Project section styling */
+
+.project {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-left: 4px solid #007BFF;
+    background-color: #f4f9ff;
+    border-radius: 5px;
+}
+
+
+/* Recommendation section styling */
+
+.recommendation {
+    background-color: #f7f9fb;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border-left: 4px solid #007BFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Styling for hidden elements */
+
+.hidden {
+    display: none;
+}
+
+
+/* Popup styling */
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    z-index: 1000;
+}
+
+.close-btn {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    background-color: #333;
+}
+
+#recommendationForm {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    resize: none;
+}
+
+#confirmationMessage {
+    text-align: center;
+    color: #28a745;
+    font-weight: bold;
+}

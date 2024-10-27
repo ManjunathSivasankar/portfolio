@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jane Doe's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header with contact information and navigation bar -->
+    <header>
+        <div class="contact-info">
+            <p><strong>Jane Doe</strong></p>
+            <p>Email: jane.doe@example.com</p>
+            <p>Phone: 123-456-7890</p>
+        </div>
+        <nav class="navbar">
+            <a href="#about">About</a>
+            <a href="#projects">Project Details</a>
+            <a href="#skills">Skills</a>
+            <a href="#recommendations">Recommendations</a>
+        </nav>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="profile_name.png" alt="Profile Image" class="profile-img">
+        <p>Hi, I'm Jane Doe! I'm a full-stack developer with extensive experience in building robust applications and microservices. I’ve worked with IBM Cloud and have expertise in Watson Services, including Watson Assistant and NLU. I’m passionate about
+            solving real-world problems using technology.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill">
+            <img src="path/to/html-logo.png" alt="HTML">
+            <p>4 years experience</p>
+        </div>
+        <div class="skill">
+            <img src="path/to/css-logo.png" alt="CSS">
+            <p>3 years experience</p>
+        </div>
+        <div class="skill">
+            <img src="path/to/react-logo.png" alt="React">
+            <p>2 years experience</p>
+        </div>
+        <div class="skill">
+            <img src="path/to/js-logo.png" alt="JavaScript">
+            <p>4 years experience</p>
+        </div>
+        <div class="skill">
+            <img src="path/to/nodejs-logo.png" alt="Node.js">
+            <p>4 years experience</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Chatbot</h3>
+            <p>Developed a secure website integrated with a chatbot for an automobile client using HTML, CSS, JavaScript, and IBM Watson Assistant.</p>
+        </div>
+        <div class="project">
+            <h3>Sentiment Analyzer</h3>
+            <p>Created and deployed a sentiment analysis tool using IBM NLU.</p>
+        </div>
+        <div class="project">
+            <h3>Fashion Website</h3>
+            <p>Designed a styled multi-page website for a fashion client with a shopping cart and Stripe payment integration.</p>
+        </div>
+    </section>
+
+    <!-- Recommendations Section -->
+    <section id="recommendations">
+        <h2>Recommendations</h2>
+        <div class="recommendation">
+            <p>"Jane is a quick learner with a great attitude and excellent teamwork skills. She has a curious mind and asks the right questions, showing potential to lead."</p>
+        </div>
+        <div class="recommendation">
+            <p>"Working with Jane has been an awesome experience. She is highly knowledgeable and always goes the extra step to ensure project success. I'd love to work with her again."</p>
+        </div>
+        <div class="recommendation">
+            <p>"Jane is an asset to any team. She has a deep understanding of web development and will be valuable for any organization."</p>
+        </div>
+        <button onclick="addRecommendation()">Leave a Recommendation</button>
+    </section>
+
+    <!-- Recommendation Form Popup -->
+    <div id="popup" class="popup hidden">
+        <form id="recommendationForm" onsubmit="submitRecommendation(event)">
+            <h3>Leave a Recommendation</h3>
+            <textarea id="recommendationText" placeholder="Write your recommendation here..." required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="confirmationMessage" class="hidden">
+            <p>Thank you for submitting a recommendation!</p>
+        </div>
+        <button onclick="closePopup()" class="close-btn">Close</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
